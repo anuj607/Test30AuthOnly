@@ -9,6 +9,7 @@ const path = require('path');
 // Read botFilePath and botFileSecret from .env file.
 const ENV_FILE = path.join(__dirname, '.env');
 require('dotenv').config({ path: ENV_FILE });
+process.env.connectionName = 'Testing29AdAuthAD2';
 
 const restify = require('restify');
 
@@ -23,7 +24,7 @@ const { MainDialog } = require('./dialogs/mainDialog');
 // client secret=4lsQ7Ofl.qRnA9rLf~jF_rE.gDXJ_z93A6
 
 
-
+console.log(process.env);
 // testingBotAuth2
 
 // Application (client) ID
